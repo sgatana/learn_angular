@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.header > img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,23 @@
+<section class="calculator-section">
+  <form class="calculator-form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="initial-amount">Initial Amount:</label>
+      <input type="number" id="initial-amount" name="initial-amount" required [(ngModel)]="initialAmount" />
+    </div>
+    <div class="form-group">
+      <label for="annual-investment">Annual Investment:</label>
+      <input type="number" id="annual-investment" name="annual-investment" required [(ngModel)]="annualInvestment" />
+    </div>
+    <div class="form-group">
+      <label for="expected-return">Expected Return:</label>
+      <input type="number" id="expected-return" name="expected-return" required [(ngModel)]="expectedReturn" />
+    </div>
+    <div class="form-group">
+      <label for="duration">Duration:</label>
+      <input type="number" id="duration" name="duration" required [(ngModel)]="duration" />
+    </div>
+
+    <button type="submit" class="calculate-button">Calculate</button>
+  </form>
+  
+</section>

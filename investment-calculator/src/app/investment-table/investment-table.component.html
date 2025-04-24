@@ -1,0 +1,22 @@
+@if (investmentData.length === 0) {
+<p>No investments available.</p>
+} @else {
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Total Interest</th>
+      <th>Annual Investment</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (investment of investmentData; track investment.year ) {
+    <tr>
+      <td>{{ investment.year }}</td>
+      <td>{{ investment.totalInterest | currency }}</td>
+      <td>{{ investment.annualInvestment }}</td>
+    </tr>
+    }
+  </tbody>
+</table>
+}
